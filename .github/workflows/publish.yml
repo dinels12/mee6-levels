@@ -5,6 +5,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      LEADERBOARD: ${{secrets.LEADERBOARD}}
     steps:
       - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
