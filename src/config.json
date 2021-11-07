@@ -1,0 +1,8 @@
+{
+  "production": {
+    "baseURL": "https://mee6.xyz/api/plugins/levels/leaderboard"
+  },
+  "development": {
+    "baseURL": "https://mee6.xyz/api/plugins/levels/leaderboard"
+  }
+}
