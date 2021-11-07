@@ -1,4 +1,4 @@
-import axios from 'axios'
+import axios from 'axios';
 import IUser from '../interfaces/User';
 
 export const getUsersLevels = async (url: string): Promise<IUser[]> => {
@@ -9,8 +9,7 @@ export const getUsersLevels = async (url: string): Promise<IUser[]> => {
       let page = 0;
 
       while (shouldContinue) {
-        const res = (await axios.get(`${url}?limit=1000&page=${page}`))
-          .data;
+        const res = (await axios.get(`${url}?limit=1000&page=${page}`)).data;
         // console.log({ total: res.players.length, page, limit });
         page += 1;
         data = data.concat(res.players);
